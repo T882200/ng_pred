@@ -1,0 +1,132 @@
+/* navbar styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 75px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  box-shadow: 0 8px 6px -6px #777;
+  /*   flex-direction: row-reverse; */
+}
+
+.nav-rtl {
+  height: 75px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  box-shadow: 0 8px 6px -6px #777;
+  flex-direction: row-reverse;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav-links {
+  margin: 0 auto;
+}
+
+.nav-link {
+  display: inline-block;
+  border: 3px;
+}
+
+.nav > .nav-header > .nav-login {
+  display: inline-block;
+  font-size: 22px;
+  color: #000;
+  padding: 18px 10px 18px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links  a {
+  display: inline-block;
+  padding: 25px 10px 25px 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 75px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+  }
+}
+
+.angularicon{
+  width:45px;
+  margin:10px;
+  margin-right: 60px;
+}
+
+.chkltr > p{
+  padding: 20px;
+}

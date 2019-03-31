@@ -1,0 +1,30 @@
+<div class="nav" id="nav">
+  <div class="nav-header">
+    <div class="nav-login">
+      Logout
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+         <a href="" target="_blank">LinkToDummy</a>
+         <a href="" target="_blank">LinkToPolly</a>
+      
+  </div>
+  <div class="chkltr">
+    <p>RTL
+    <input type="checkbox" [(ngModel)]="isChecked" (change)="checkValue(isChecked?'A':'B')" />
+    LTR</p>
+  </div>
+  <!--<mat-slide-toggle>Slide me!</mat-slide-toggle>-->
+  <div class="icon">
+    <img class="angularicon" src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg" alt="angular icon">
+  </div>
+</div>
+
+<!-- end of navbar -->
